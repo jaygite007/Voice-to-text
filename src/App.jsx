@@ -22,13 +22,17 @@ function App() {
       
 
         <div className="main-contain">
+          <div>
             {transcript}
-        </div>
+          </div>
+
 
         <div className="btn-style">
           <button className='button'>Copy</button>
           <button  onClick={StartListenning} className='button'>Start Listening </button>
           <button onClick={() => SpeechRecognition.stopListening()}  className='button'>Stop Listening </button>
+        </div>
+        
         </div>
 
       </div>
